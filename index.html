@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HostBooks Partner Success Hub</title>
+    <!-- Google Fonts: Outfit & Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- FontAwesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css?v=2.3">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body class="light-theme">
+    <div class="app-container">
+        <!-- Sidebar Navigation -->
+        <aside class="sidebar" id="app-sidebar">
+            <div class="sidebar-header">
+                <div class="logo-area" style="display: flex; align-items: center; gap: 8px;">
+                    <img src="hb%20logo.png" alt="HostBooks Logo" class="logo-img" id="sidebar-logo">
+                    <span class="sub-brand" style="border-left: 1px solid var(--border-color); padding-left: 8px; margin-left: 4px; line-height: 1.2; font-size: 10px; max-width: 100px; display: inline-block;">Partner<br>Success Hub</span>
+                </div>
+            </div>
+            
+            <nav class="sidebar-nav">
+                <div class="nav-section-title">Enablement Core</div>
+                <ul>
+                    <li class="nav-item active" data-target="dashboard" id="nav-dashboard">
+                        <i class="fa-solid fa-house"></i>
+                        <span>Dashboard</span>
+                    </li>
+                    <li class="nav-item" data-target="understand" id="nav-understand">
+                        <i class="fa-solid fa-book-open"></i>
+                        <span>01 Understand HostBooks</span>
+                    </li>
+                    <li class="nav-item" data-target="opportunities" id="nav-opportunities">
+                        <i class="fa-solid fa-compass"></i>
+                        <span>02 Identify Opportunities</span>
+                    </li>
+                    <li class="nav-item" data-target="sell" id="nav-sell">
+                        <i class="fa-solid fa-sack-dollar"></i>
+                        <span>03 Sell HostBooks</span>
+                    </li>
+                </ul>
+
+                <div class="nav-section-title">GTM & Operations</div>
+                <ul>
+                    <li class="nav-item" data-target="marketing" id="nav-marketing">
+                        <i class="fa-solid fa-bullhorn"></i>
+                        <span>04 Marketing Toolkit</span>
+                    </li>
+                    <li class="nav-item" data-target="implementation" id="nav-implementation">
+                        <i class="fa-solid fa-check-to-slot"></i>
+                        <span>05 Implementation Success</span>
+                    </li>
+                    <li class="nav-item" data-target="expansion" id="nav-expansion">
+                        <i class="fa-solid fa-chart-line"></i>
+                        <span>06 Account Expansion</span>
+                    </li>
+                    <li class="nav-item" data-target="partner_program" id="nav-partner-program">
+                        <i class="fa-solid fa-handshake"></i>
+                        <span>07 Partner Program</span>
+                    </li>
+                </ul>
+
+                <div class="nav-section-title">Resources</div>
+                <ul>
+                    <li class="nav-item" data-target="templates" id="nav-templates">
+                        <i class="fa-solid fa-file-invoice"></i>
+                        <span>08 Templates</span>
+                    </li>
+                    <li class="nav-item" data-target="training" id="nav-training">
+                        <i class="fa-solid fa-graduation-cap"></i>
+                        <span>09 Training</span>
+                    </li>
+                    <li class="nav-item" data-target="case_studies" id="nav-case-studies">
+                        <i class="fa-solid fa-quote-left"></i>
+                        <span>10 Case Studies</span>
+                    </li>
+                </ul>
+
+                <div class="nav-section-title">⭐ Featured Asset Decks</div>
+                <ul>
+                    <li class="nav-item-pdf">
+                        <a href="/Hostbooks' partner guide.pdf" target="_blank">
+                            <i class="fa-solid fa-file-pdf" style="color:var(--accent-color);"></i>
+                            <span>Partner Guide PDF</span>
+                        </a>
+                    </li>
+                    <li class="nav-item-pdf">
+                        <a href="/Agentic AI ERP sales guide for partners.pdf" target="_blank">
+                            <i class="fa-solid fa-file-pdf" style="color:#10b981;"></i>
+                            <span>ERP Sales Guide PDF</span>
+                        </a>
+                    </li>
+                    <li class="nav-item-pdf">
+                        <a href="/Hcem Opportunity close plan template.pdf" target="_blank">
+                            <i class="fa-solid fa-file-pdf" style="color:var(--accent-color);"></i>
+                            <span>HCEM Close Plan PDF</span>
+                        </a>
+                    </li>
+                    <li class="nav-item-pdf">
+                        <a href="/HostBooks_Partner_PPT VA Final.pptx" target="_blank">
+                            <i class="fa-solid fa-file-powerpoint" style="color:var(--accent-color);"></i>
+                            <span>Partner Pitch Deck PPTX</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+            <!-- Sidebar Footer -->
+            <div class="sidebar-footer">
+                <div class="footer-actions" style="width: 100%; display: flex; justify-content: center; align-items: center;">
+                    <button class="theme-toggle" id="theme-toggle-btn" aria-label="Toggle Theme">
+                        <i class="fa-solid fa-sun icon-light"></i>
+                        <i class="fa-solid fa-moon icon-dark"></i>
+                    </button>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Main Content Area -->
+        <main class="main-content" id="app-main">
+            <!-- Top Header Control Bar -->
+            <header class="top-bar">
+                <div class="left-controls">
+                    <button class="menu-toggle-btn" id="sidebar-toggle" aria-label="Toggle Navigation">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+                    <div class="breadcrumb">
+                        <span id="breadcrumb-parent">Portal</span>
+                        <i class="fa-solid fa-chevron-right separator"></i>
+                        <span id="breadcrumb-current">Dashboard</span>
+                    </div>
+                </div>
+
+                <div class="right-controls">
+                    <div class="search-box">
+                        <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                        <input type="text" id="global-search-input" placeholder="Search resources, questions, objections... (Press '/')">
+                        <span class="search-badge">/</span>
+                        <!-- Search Dropdown Results -->
+                        <div class="search-results-dropdown" id="search-results-box" style="display:none;"></div>
+                    </div>
+                    <div class="quick-tools-btn">
+                        <button class="btn btn-secondary" id="btn-quick-tools">
+                            <i class="fa-solid fa-toolbox"></i> Interactive Tools
+                        </button>
+                        <div class="tools-dropdown" id="tools-dropdown-menu">
+                            <a href="#" data-tool="roi"><i class="fa-solid fa-calculator"></i> ROI Calculator</a>
+                            <a href="#" data-tool="questions"><i class="fa-solid fa-circle-question"></i> Question Finder</a>
+                            <a href="#" data-tool="objections"><i class="fa-solid fa-shield-halved"></i> Objection Solver</a>
+                        </div>
+                    </div>
+                    <a href="repository/" class="btn btn-primary" id="btn-browse-repo" target="_blank">
+                        <i class="fa-solid fa-folder-open"></i> Browse Files
+                    </a>
+                </div>
+            </header>
+
+            <!-- Dynamic Viewport -->
+            <div class="content-viewport" id="content-viewport">
+                <!-- Dashboard View (Default) -->
+                <div class="view-pane active" id="view-dashboard">
+                    <div class="dashboard-hero">
+                        <div class="hero-content">
+                            <h1>Autonomous Agentic ERP Partner Portal</h1>
+                            <p>Grow your business with the world's first Autonomous Agentic AI ERP. Outperform competitors, deliver 35–55% lower TCO, and build high-margin recurring income tracks.</p>
+                            <div class="hero-stats">
+                                <div class="stat-pill"><i class="fa-solid fa-robot" style="color:var(--accent-color);"></i> <span class="label">1st Agentic ERP</span></div>
+                                <div class="stat-pill"><i class="fa-solid fa-cubes" style="color:#10b981;"></i> <span class="label">31 Integrated Modules</span></div>
+                                <div class="stat-pill"><i class="fa-solid fa-percent" style="color:#3b82f6;"></i> <span class="label">35-55% Lower TCO</span></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Dashboard Widgets Grid -->
+                    <div class="dashboard-grid">
+                        <!-- Left Panel: Program Highlights -->
+                        <div class="dashboard-col main-panel">
+                            <h3 class="section-subtitle" style="margin-top: 0;">Featured Partner Asset Decks</h3>
+                            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 20px; margin-bottom: 28px;">
+                                <div class="card interactive-card featured-asset-card" style="border: 1px solid var(--accent-color); padding: 0; overflow: hidden; display: flex; flex-direction: column;">
+                                    <a href="/Hostbooks' partner guide.pdf" target="_blank" class="pdf-thumbnail-container" style="position: relative; aspect-ratio: 16/9; background: var(--bg-tertiary); overflow: hidden; border-bottom: 1px solid var(--border-color); display: block;">
+                                        <img src="/Hostbooks' partner guide.pdf.png" alt="HostBooks Partner Guide" style="width: 100%; height: 100%; object-fit: cover; transition: transform var(--transition-normal);">
+                                        <div class="pdf-hover-overlay" style="position: absolute; top:0; left:0; right:0; bottom:0; background: rgba(0,0,0,0.4); display: flex; align-items: center; justify-content: center; opacity: 0; transition: opacity var(--transition-fast);">
+                                            <span class="btn btn-primary" style="font-size: 12px; pointer-events: none;"><i class="fa-solid fa-file-pdf"></i> View Guide</span>
+                                        </div>
+                                    </a>
+                                    <div style="padding: 16px; flex: 1; display: flex; flex-direction: column; justify-content: space-between;">
+                                        <div>
+                                            <h4 style="margin-bottom: 6px;"><a href="/Hostbooks' partner guide.pdf" target="_blank" style="color: var(--text-primary); text-decoration:none;">HostBooks Partner Guide</a></h4>
+                                            <p style="margin-bottom: 12px; font-size:12.5px; color: var(--text-secondary);">Complete reseller program outlines, referral commissions, deal registration rules, and incentive frameworks.</p>
+                                        </div>
+                                        <div style="display:flex; justify-content:space-between; align-items:center; margin-top: auto;">
+                                            <a href="/Hostbooks' partner guide.pdf" target="_blank" class="arrow-action" style="color: var(--accent-color); font-size: 11px; text-decoration:none;">Open PDF <i class="fa-solid fa-up-right-from-square"></i></a>
+                                            <a href="/Hostbooks' partner guide.pdf" download class="btn btn-secondary" style="font-size: 10px; padding: 4px 8px;"><i class="fa-solid fa-download"></i> Download</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card interactive-card featured-asset-card" style="border: 1px solid #10b981; padding: 0; overflow: hidden; display: flex; flex-direction: column;">
+                                    <a href="/Agentic AI ERP sales guide for partners.pdf" target="_blank" class="pdf-thumbnail-container" style="position: relative; aspect-ratio: 16/9; background: var(--bg-tertiary); overflow: hidden; border-bottom: 1px solid var(--border-color); display: block;">
+                                        <img src="/Agentic AI ERP sales guide for partners.pdf.png" alt="Agentic AI ERP Sales Guide" style="width: 100%; height: 100%; object-fit: cover; transition: transform var(--transition-normal);">
+                                        <div class="pdf-hover-overlay" style="position: absolute; top:0; left:0; right:0; bottom:0; background: rgba(0,0,0,0.4); display: flex; align-items: center; justify-content: center; opacity: 0; transition: opacity var(--transition-fast);">
+                                            <span class="btn btn-primary" style="font-size: 12px; pointer-events: none; background: linear-gradient(135deg, #10b981 0%, #059669 100%);"><i class="fa-solid fa-display"></i> View Deck</span>
+                                        </div>
+                                    </a>
+                                    <div style="padding: 16px; flex: 1; display: flex; flex-direction: column; justify-content: space-between;">
+                                        <div>
+                                            <h4 style="margin-bottom: 6px;"><a href="/Agentic AI ERP sales guide for partners.pdf" target="_blank" style="color: var(--text-primary); text-decoration:none;">Agentic AI ERP Sales Guide</a></h4>
+                                            <p style="margin-bottom: 12px; font-size:12.5px; color: var(--text-secondary);">Strategic pitch deck for enterprise accounts (>50 Cr turnover). Includes discovery paths, objections, and win themes.</p>
+                                        </div>
+                                        <div style="display:flex; justify-content:space-between; align-items:center; margin-top: auto;">
+                                            <a href="/Agentic AI ERP sales guide for partners.pdf" target="_blank" class="arrow-action" style="color: #10b981; font-size: 11px; text-decoration:none;">Open PDF <i class="fa-solid fa-up-right-from-square"></i></a>
+                                            <a href="/Agentic AI ERP sales guide for partners.pdf" download class="btn btn-secondary" style="font-size: 10px; padding: 4px 8px;"><i class="fa-solid fa-download"></i> Download</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card interactive-card featured-asset-card" style="border: 1px solid var(--accent-color); padding: 0; overflow: hidden; display: flex; flex-direction: column;">
+                                    <a href="/Hcem Opportunity close plan template.pdf" target="_blank" class="pdf-thumbnail-container" style="position: relative; aspect-ratio: 16/9; background: var(--bg-tertiary); overflow: hidden; border-bottom: 1px solid var(--border-color); display: block;">
+                                        <img src="/Hcem Opportunity close plan template.pdf.png" alt="HCEM Opportunity Close Plan Template" style="width: 100%; height: 100%; object-fit: cover; transition: transform var(--transition-normal);">
+                                        <div class="pdf-hover-overlay" style="position: absolute; top:0; left:0; right:0; bottom:0; background: rgba(0,0,0,0.4); display: flex; align-items: center; justify-content: center; opacity: 0; transition: opacity var(--transition-fast);">
+                                            <span class="btn btn-primary" style="font-size: 12px; pointer-events: none; background: var(--accent-gradient);"><i class="fa-solid fa-file-invoice"></i> View Plan</span>
+                                        </div>
+                                    </a>
+                                    <div style="padding: 16px; flex: 1; display: flex; flex-direction: column; justify-content: space-between;">
+                                        <div>
+                                            <h4 style="margin-bottom: 6px;"><a href="/Hcem Opportunity close plan template.pdf" target="_blank" style="color: var(--text-primary); text-decoration:none;">HCEM Opportunity Close Plan</a></h4>
+                                            <p style="margin-bottom: 12px; font-size:12.5px; color: var(--text-secondary);">Framework template for managing milestones, stakeholder consensus, and final signing processes for 50 Cr+ deals.</p>
+                                        </div>
+                                        <div style="display:flex; justify-content:space-between; align-items:center; margin-top: auto;">
+                                            <a href="/Hcem Opportunity close plan template.pdf" target="_blank" class="arrow-action" style="color: var(--accent-color); font-size: 11px; text-decoration:none;">Open PDF <i class="fa-solid fa-up-right-from-square"></i></a>
+                                            <a href="/Hcem Opportunity close plan template.pdf" download class="btn btn-secondary" style="font-size: 10px; padding: 4px 8px;"><i class="fa-solid fa-download"></i> Download</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card interactive-card featured-asset-card" style="border: 1px solid var(--accent-color); padding: 0; overflow: hidden; display: flex; flex-direction: column;">
+                                    <a href="/HostBooks_Partner_PPT VA Final.pptx" target="_blank" class="pdf-thumbnail-container" style="position: relative; aspect-ratio: 16/9; background: var(--bg-tertiary); overflow: hidden; border-bottom: 1px solid var(--border-color); display: block;">
+                                        <img src="/HostBooks_Partner_PPT VA Final.pptx.png" alt="HostBooks Partner Presentation" style="width: 100%; height: 100%; object-fit: cover; transition: transform var(--transition-normal);">
+                                        <div class="pdf-hover-overlay" style="position: absolute; top:0; left:0; right:0; bottom:0; background: rgba(0,0,0,0.4); display: flex; align-items: center; justify-content: center; opacity: 0; transition: opacity var(--transition-fast);">
+                                            <span class="btn btn-primary" style="font-size: 12px; pointer-events: none; background: var(--accent-gradient);"><i class="fa-solid fa-file-powerpoint"></i> View Slide</span>
+                                        </div>
+                                    </a>
+                                    <div style="padding: 16px; flex: 1; display: flex; flex-direction: column; justify-content: space-between;">
+                                        <div>
+                                            <h4 style="margin-bottom: 6px;"><a href="/HostBooks_Partner_PPT VA Final.pptx" target="_blank" style="color: var(--text-primary); text-decoration:none;">Partner Pitch Deck (VA Final)</a></h4>
+                                            <p style="margin-bottom: 12px; font-size:12.5px; color: var(--text-secondary);">Master partner pitch deck for key stakeholder reviews. Outlines the corporate value proposition and reseller GTM tracks.</p>
+                                        </div>
+                                        <div style="display:flex; justify-content:space-between; align-items:center; margin-top: auto;">
+                                            <a href="/HostBooks_Partner_PPT VA Final.pptx" target="_blank" class="arrow-action" style="color: var(--accent-color); font-size: 11px; text-decoration:none;">Open Deck <i class="fa-solid fa-up-right-from-square"></i></a>
+                                            <a href="/HostBooks_Partner_PPT VA Final.pptx" download class="btn btn-secondary" style="font-size: 10px; padding: 4px 8px;"><i class="fa-solid fa-download"></i> Download</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <h3 class="section-subtitle">Interactive Sales Utilities</h3>
+                            <div class="grid-2-col">
+                                <div class="card interactive-card" id="card-tool-questions">
+                                    <div class="card-icon questions-theme"><i class="fa-solid fa-clipboard-question"></i></div>
+                                    <h4>Discovery Question Finder</h4>
+                                    <p>Browse and filter 210+ questions across Finance, GST, Operations, and Compliance departments.</p>
+                                    <span class="arrow-action">Launch Finder <i class="fa-solid fa-arrow-right"></i></span>
+                                </div>
+                                <div class="card interactive-card" id="card-tool-objections">
+                                    <div class="card-icon objections-theme"><i class="fa-solid fa-shield-heart"></i></div>
+                                    <h4>Objection Battlecard Solver</h4>
+                                    <p>Find instant, proof-backed scripts to handle 100+ customer concerns and competitive claims.</p>
+                                    <span class="arrow-action">Open Battlecards <i class="fa-solid fa-arrow-right"></i></span>
+                                </div>
+                                <div class="card interactive-card" id="card-tool-roi">
+                                    <div class="card-icon calculator-theme"><i class="fa-solid fa-calculator"></i></div>
+                                    <h4>Interactive ROI Calculator</h4>
+                                    <p>Model financial returns, time recaptured, and tax compliance penalty savings for prospective accounts.</p>
+                                    <span class="arrow-action">Calculate ROI <i class="fa-solid fa-arrow-right"></i></span>
+                                </div>
+                                <div class="card interactive-card" id="card-tool-campaigns">
+                                    <div class="card-icon campaigns-theme"><i class="fa-solid fa-bullhorn"></i></div>
+                                    <h4>GTM Campaign copy center</h4>
+                                    <p>Instant access to ready-to-run landing page copies, email sequences, LinkedIn posts, and outreach scripts.</p>
+                                    <span class="arrow-action">Explore Campaigns <i class="fa-solid fa-arrow-right"></i></span>
+                                </div>
+                            </div>
+
+                            <h3 class="section-subtitle" style="margin-top: 2rem;">Core Enablement Tracks</h3>
+                            <div class="enablement-tracks-list">
+                                <div class="track-row" data-target="understand">
+                                    <div class="track-num">01</div>
+                                    <div class="track-info">
+                                        <h5>Understand the Product Ecosystem</h5>
+                                        <p>Learn about HostBooks Cloud ERP, Pay360, bank reconciliation matching, and GST modules.</p>
+                                    </div>
+                                    <i class="fa-solid fa-chevron-right track-arrow"></i>
+                                </div>
+                                <div class="track-row" data-target="opportunities">
+                                    <div class="track-num">02</div>
+                                    <div class="track-info">
+                                        <h5>Qualify and Map Opportunities</h5>
+                                        <p>Ideal Customer Profiles (ICPs) and solutions plays mapped to Manufacturing, Retail, and Logistics.</p>
+                                    </div>
+                                    <i class="fa-solid fa-chevron-right track-arrow"></i>
+                                </div>
+                                <div class="track-row" data-target="sell">
+                                    <div class="track-num">03</div>
+                                    <div class="track-info">
+                                        <h5>The Master Sales Playbook</h5>
+                                        <p>Step-by-step guidance on running qualification meetings, discovery calls, demos, and closing.</p>
+                                    </div>
+                                    <i class="fa-solid fa-chevron-right track-arrow"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Right Panel: Announcements & Program Info -->
+                        <div class="dashboard-col side-panel">
+                            <div class="card promo-card" style="border: 1px solid var(--accent-color); background: linear-gradient(135deg, rgba(1, 113, 188, 0.05) 0%, var(--bg-secondary) 100%);">
+                                <h4>Partner Commission Tracks</h4>
+                                <ul class="promo-list">
+                                    <li>
+                                        <div class="promo-badge gold" style="background-color: rgba(16, 185, 129, 0.15); color: #059669; border: 1px solid #10b981;">Solution</div>
+                                        <div><strong>40% Year 1</strong> commission + <strong>25% renewals</strong>. Closes and implements.</div>
+                                    </li>
+                                    <li>
+                                        <div class="promo-badge platinum" style="background-color: rgba(1, 113, 188, 0.15); color: var(--accent-color); border: 1px solid var(--accent-color);">Sales</div>
+                                        <div><strong>35% Year 1</strong> commission + <strong>20% renewals</strong>. Owns full sales cycle.</div>
+                                    </li>
+                                    <li>
+                                        <div class="promo-badge silver" style="background-color: rgba(1, 113, 188, 0.15); color: var(--accent-color); border: 1px solid var(--accent-color);">Referral</div>
+                                        <div><strong>10% Year 1</strong> commission. Hands off qualified leads.</div>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="card update-card">
+                                <h4>Onboarding & Support Quick Links</h4>
+                                <ul class="link-list">
+                                    <li><a href="#" data-target="partner_program" data-sub="onboarding_guide"><i class="fa-solid fa-user-check"></i> Onboarding Checklist</a></li>
+                                    <li><a href="#" data-target="partner_program" data-sub="deal_reg"><i class="fa-solid fa-stamp"></i> Register a New Deal</a></li>
+                                    <li><a href="#" data-target="templates"><i class="fa-solid fa-file-excel"></i> Download Migration Templates</a></li>
+                                    <li><a href="#" data-target="training"><i class="fa-solid fa-award"></i> View Certification Paths</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Generic Content View (For Document Layouts) -->
+                <div class="view-pane" id="view-document" style="display:none;">
+                    <div class="document-container">
+                        <!-- Navigation tabs for section files -->
+                        <div class="doc-tabs-bar" id="doc-tabs-bar"></div>
+                        <div class="doc-body-wrapper">
+                            <!-- Left: Main article content -->
+                            <article class="markdown-body" id="doc-markdown-content"></article>
+                            <!-- Right: Embedded Widget Slot (if any) -->
+                            <aside class="doc-interactive-slot" id="doc-interactive-slot" style="display:none;"></aside>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- Interactive Tools Modal Overlay -->
+    <div class="modal-overlay" id="tools-modal" style="display:none;">
+        <div class="modal-box">
+            <div class="modal-header">
+                <h3 id="modal-title"><i class="fa-solid fa-toolbox"></i> Interactive Utility</h3>
+                <button class="btn-close-modal" id="btn-close-modal"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+            <div class="modal-body" id="modal-body-content"></div>
+        </div>
+    </div>
+
+    <script src="data.js?v=2.3"></script>
+    <script src="app.js?v=2.3"></script>
+</body>
+</html>

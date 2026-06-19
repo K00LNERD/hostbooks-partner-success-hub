@@ -1,0 +1,6 @@
+ItemName,SKU,UnitOfMeasure,StandardCost,SellingPrice,TaxRate,Warehouse,OpeningStock
+HostBooks ERP Server Lic,SKU-ERP-001,Nos,50000.00,75000.00,18,Gurugram Main,10
+HostBooks FnB POS Terminal,SKU-POS-002,Nos,12000.00,18000.00,18,Mumbai Hub,25
+Aahar Kitchen Recipe Display,SKU-KRD-003,Nos,8000.00,12500.00,18,Gurugram Main,15
+SCM RFID Barcode Scanner,SKU-SCN-004,Nos,3500.00,6000.00,12,Gurugram Main,50
+Standard Thermal Paper Rolls,SKU-TPR-005,Box,200.00,350.00,12,Mumbai Hub,200

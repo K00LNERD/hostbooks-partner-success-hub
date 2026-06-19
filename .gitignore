@@ -1,0 +1,6 @@
+.DS_Store
+__pycache__/
+*.pyc
+extract_pptx.py
+extracted_deck.txt
+extract_template.py

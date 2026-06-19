@@ -1,0 +1,7 @@
+LedgerName,Group,OpeningBalance,DrCr,TaxRegistrationNo,ContactPerson,MobileNo,Email
+Acme Corp India,Sundry Debtors,150000.00,Dr,07AAAAA1111A1Z1,John Doe,9876543210,john@acme.com
+Apex Logistics,Sundry Debtors,45000.00,Dr,07BBBBB2222B2Z2,Alice Smith,9876543211,alice@apex.com
+HostBooks Services,Sundry Creditors,12000.00,Cr,07CCCCC3333C3Z3,Bob Johnson,9876543212,bob@hostbooks.com
+Office Supplies Ltd,Sundry Creditors,8500.00,Cr,,Jane Finch,9876543213,jane@officesupplies.com
+State Bank of India,Bank Accounts,2500000.00,Dr,,,,
+Petty Cash,Cash-in-hand,5000.00,Dr,,,,
